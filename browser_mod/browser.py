@@ -179,7 +179,6 @@ def test_bot():
     driver = get_patched_driver()
     br = Test_task_Browser(driver=driver)
     br.bot_check(tasks)
-    sleep(10000)
 
 
 def main():
