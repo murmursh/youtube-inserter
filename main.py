@@ -1,4 +1,4 @@
-from youtube_bot.test import test
+from test import test
 
-test()
-print("")
+if __name__ == "__main__":
+    test()

@@ -1,3 +1,4 @@
+
 var inject = function () {
     const context = {
         "BUFFER": null,

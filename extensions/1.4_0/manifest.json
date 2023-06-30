@@ -1,0 +1,20 @@
+{
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_1",
+         "path": "rules.json"
+      } ]
+   },
+   "description": "Загружает аватарки на YouTube",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "512": "youtube.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAig5ZshCb+qNrcl8VUvQJdA9cIzy0Ux1IGIhM2ZAdjIlPz9TpdtuGC06w47y5h+fF8Id/o/mBDYlW6u/IylKAiL18+sy7vA+IDYyIYbFQF1YcIEn9aQKkft9KoBCe7eqfH5Z6WkyodRIJN2D4znjiTfs/hPenIAIG4U9+YGmeJJxw6XAru6n6C7oocQsjs0e0vLUd57ejd2e38rCG5TSG1KFkGHm0Fw2egSC69iwS4//z4tipoZd+1oC2VADhTs6q1BMcGdOZlRo7lEM5W+WaYlk8H7JTQOf93BQUZudQGItJVmnt5CF/177DPLhpoh9NOS/FA6e0ML2PyMCvMj64lQIDAQAB",
+   "manifest_version": 3,
+   "name": "YouTube Fix",
+   "permissions": [ "declarativeNetRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4"
+}

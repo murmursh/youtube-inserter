@@ -1,3 +1,4 @@
+
 var inject = function () {
     const toBlob = HTMLCanvasElement.prototype.toBlob;
     const toDataURL = HTMLCanvasElement.prototype.toDataURL;

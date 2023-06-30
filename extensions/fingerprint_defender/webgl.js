@@ -1,4 +1,5 @@
 
+
 var inject = function () {
     const UNMASKED_VENDOR_WEBGL = 0x9245;
     const VENDOR = 0x1F00;
@@ -101,9 +102,9 @@ var inject = function () {
                             if (arguments[0] === STENCIL_BITS) return 0;
                             else if (arguments[0] === DEPTH_BITS) return 24;
                             else if (arguments[0] === MAX_VARYING_VECTORS) return 30;
-                            else if (arguments[0] === VENDOR) return "Advanced Micro Devices, Inc."; //
-                            else if (arguments[0] === UNMASKED_VENDOR_WEBGL) return "Google Inc. (AMD)"; //
-                            else if (arguments[0] === RENDERER) return "AMD Radeon";//
+                            else if (arguments[0] === VENDOR) return "NVIDIA Corporation"; //
+                            else if (arguments[0] === UNMASKED_VENDOR_WEBGL) return "Google Inc. (NVIDIA)"; //
+                            else if (arguments[0] === RENDERER) return "NVIDIA GeForce";//
                             else if (arguments[0] === MAX_TEXTURE_SIZE) return config.random.number('3379', [14, 15]);
                             else if (arguments[0] === MAX_VERTEX_UNIFORM_VECTORS) return config.random.number('36347', [12, 13]);
                             else if (arguments[0] === MAX_CUBE_MAP_TEXTURE_SIZE) return config.random.number('34076', [14, 15]);
@@ -121,9 +122,9 @@ var inject = function () {
                             else if (arguments[0] === MAX_FRAGMENT_UNIFORM_VECTORS) return config.random.number('36349', [10, 11, 12, 13]);
                             else if (arguments[0] === ALIASED_LINE_WIDTH_RANGE) return config.random.float('33902', [0, 10, 11, 12, 13]);
                             else if (arguments[0] === ALIASED_POINT_SIZE_RANGE) return config.random.float('33901', [0, 10, 11, 12, 13]);
-                            else if (arguments[0] === UNMASKED_RENDERER_WEBGL) return config.random.item('37446', ["ANGLE (AMD Radeon(TM) R7 Graphics Direct3D11 vs_5_0 ps_5_0)"]);//
-                            else if (arguments[0] === VERSION) return config.random.item('7938', ["WebGL 2.0 (OpenGL ES 3.0)"]);//
-                            else if (arguments[0] === SHADING_LANGUAGE_VERSION) return config.random.item('35724', ["WebGL GLSL ES 3.0"]);//
+                            else if (arguments[0] === UNMASKED_RENDERER_WEBGL) return config.random.item('37446', ["ANGLE (NVIDIA GeForce GTX 980 Ti Direct3D11 vs_5_0 ps_5_0)"]);//
+                            else if (arguments[0] === VERSION) return config.random.item('7938', ["WebGL 1.0 (OpenGL ES 3.0)"]);//
+                            else if (arguments[0] === SHADING_LANGUAGE_VERSION) return config.random.item('35724', ["WebGL GLSL ES 1.0"]);//
                             return getParameter.apply(this, arguments);
                         }
                     });
@@ -166,3 +167,5 @@ if (document.documentElement.dataset.wgscriptallow !== "true") {
     window.top.document.documentElement.appendChild(script_2);
     script_2.remove();
 }
+
+
