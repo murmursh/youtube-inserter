@@ -1,10 +1,12 @@
 from browser_mod import BrowserSession
 from pathlib import Path
+import os
+
 
 
 class SessionManager:
     def __init__(self):
-        self.youtube_fix = Path("extentions/1.4_0")
+        self.youtube_fix = Path(os.path.abspath("extentions/1.4_0"))
         self.create_test_session()
 
     def create_test_session(self):
