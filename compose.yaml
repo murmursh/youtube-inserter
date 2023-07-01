@@ -1,6 +1,7 @@
 version: '3'
 
 services:
-  uc:
-    image: ultrafunk/undetected-chromedriver
-    
+  base:
+    build: ./base
+    volumes:
+      - ./base/sessions:/base/sessions

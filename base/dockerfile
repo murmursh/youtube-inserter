@@ -1,4 +1,4 @@
-FROM ultrafunk/undetected-chromedriver
+FROM ultrafunk/undetected-chromedriver:3.20-chrome-lateinstall
 COPY . /base
 WORKDIR /base
 RUN pip install -r ./requirements.txt
