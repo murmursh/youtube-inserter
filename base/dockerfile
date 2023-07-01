@@ -1,0 +1,5 @@
+FROM ultrafunk/undetected-chromedriver
+COPY . /base
+WORKDIR /base
+RUN pip install -r ./requirements.txt
+CMD [ "python3", "main.py" ]
