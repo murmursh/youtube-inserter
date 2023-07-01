@@ -163,3 +163,4 @@ cython_debug/
 .vscode
 test.py
 base/sessions/*
+!base/sessions/readme.md
